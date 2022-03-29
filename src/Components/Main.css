@@ -47,8 +47,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
+    transition: all 600ms;
 }
 
-.edit{
-    
+.tarefas li:hover {
+    background: #696877;
 }
+
+.tarefas li .edit {
+    margin-right: 15px;
+    color: rgb(2, 51, 156);
+}
+
+.tarefas li .delete {
+    margin-right: 15px;
+    color: rgb(156, 2, 2);
+}
+
+.tarefas li:hover .delete,
+.tarefas li:hover .edit{
+    color: black;
+}
+
+.tarefas li .delete,
+.tarefas li .edit{
+    cursor: pointer;
+    transition: all 600ms;
+}
+    
+
